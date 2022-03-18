@@ -1,1014 +1,966 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resumé of Anthony Lee</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Resumé of Anthony Lee</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
-  <style type="text/css">
-    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+      a {
+        color: #ef6c00;
+      }
+      a:hover,
+      a:active {
+        color: #ff9d3f;
+      }
 
-    a {
-      color: #ef6c00;
-    }
-    a:hover, a:active {
-      color: #ff9d3f;
-    }
+      body {
+        font-family: "Open Sans", Arial, Tahoma;
+        font-weight: 400;
+        color: #363636;
+        background: #7f0000;
+      }
 
-    body {
-      font-family: 'Open Sans', Arial, Tahoma;
-      font-weight: 400;
-      color: #363636;
-      background: #7f0000;
-    }
+      blockquote {
+        font-size: 1em;
+      }
 
-    blockquote {
-      font-size: 1em;
-    }
+      .container {
+        margin-top: 80px;
+        margin-bottom: 15px;
+        background: #fff;
+      }
 
-    .container {
-      margin-top: 80px;
-      margin-bottom: 15px;
-      background: #fff;
-    }
+      #photo-header {
+        margin-top: -75px;
+      }
 
-    #photo-header {
-      margin-top: -75px;
-    }
+      #photo {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        overflow: hidden;
+        padding: 5px;
+        background: #fff;
+        display: inline-block;
+      }
 
-    #photo {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      overflow: hidden;
-      padding: 5px;
-      background: #fff;
-      display: inline-block;
-    }
+      #photo img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
 
-    #photo img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-    }
+      #text-header h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 1.5em;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+      }
 
-    #text-header h1 {
-      margin: 0;
-      padding: 0;
-      font-size: 1.5em;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: -1px;
-    }
+      #text-header h1::first-line {
+        font-size: 1.5em;
+        font-weight: 800;
+        line-height: 1.5em;
+      }
 
-    #text-header h1::first-line {
-      font-size: 1.5em;
-      font-weight: 800;
-      line-height: 1.5em;
-    }
+      #text-header h1 span {
+        color: #334960;
+        opacity: 0.7;
+      }
 
-    #text-header h1 span {
-      color: #334960;
-      opacity: 0.7;
-    }
+      #text-header h1 sup {
+        opacity: 0.5;
+      }
 
-    #text-header h1 sup {
-      opacity: 0.5;
-    }
+      #text-header:after {
+        width: 100%;
+        height: 3px;
+        border-bottom: 1px solid #ddd;
+        margin-top: 15px;
+        content: "";
+        display: block;
+      }
 
-    #text-header:after {
-      width: 100%;
-      height: 3px;
-      border-bottom: 1px solid #ddd;
-      margin-top: 15px;
-      content: '';
-      display: block;
-    }
+      .box {
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+      }
 
-    .box {
-      padding-bottom: 10px;
-      margin-bottom: 25px;
-    }
+      .box h2 {
+        color: #c62828;
+        font-size: 1.5em;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
 
-    .box h2 {
-      color: #c62828;
-      font-size: 1.5em;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
+      #awards,
+      #education {
+        margin-top: 20px;
+        margin-bottom: 0;
+        position: relative;
+        padding: 1em 0;
+        list-style: none;
+      }
 
-    #awards,
-    #education {
-      margin-top: 20px;
-      margin-bottom: 0;
-      position: relative;
-      padding: 1em 0;
-      list-style: none;
-    }
+      #awards:before,
+      #education:before {
+        width: 5px;
+        height: 100%;
+        position: absolute;
+        left: 35px;
+        top: 0;
+        content: " ";
+        display: block;
+        background: #32475c;
+        background: -moz-linear-gradient(
+          top,
+          #ffffff 0%,
+          #32475c 7%,
+          #32475c 89%,
+          #ffffff 100%
+        );
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          color-stop(0%, #ffffff),
+          color-stop(7%, #32475c),
+          color-stop(89%, #32475c),
+          color-stop(100%, #ffffff)
+        );
+        background: -webkit-linear-gradient(
+          top,
+          #ffffff 0%,
+          #32475c 7%,
+          #32475c 89%,
+          #ffffff 100%
+        );
+        background: -o-linear-gradient(
+          top,
+          #ffffff 0%,
+          #32475c 7%,
+          #32475c 89%,
+          #ffffff 100%
+        );
+        background: -ms-linear-gradient(
+          top,
+          #ffffff 0%,
+          #32475c 7%,
+          #32475c 89%,
+          #ffffff 100%
+        );
+        background: linear-gradient(
+          to bottom,
+          #ffffff 0%,
+          #32475c 7%,
+          #32475c 89%,
+          #ffffff 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+      }
 
-    #awards:before,
-    #education:before {
-      width: 5px;
-      height: 100%;
-      position: absolute;
-      left: 35px;
-      top: 0;
-      content: ' ';
-      display: block;
-      background: #32475c;
-      background: -moz-linear-gradient(top, #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(7%, #32475c), color-stop(89%, #32475c), color-stop(100%, #ffffff));
-      background: -webkit-linear-gradient(top, #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
-      background: -o-linear-gradient(top, #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
-      background: -ms-linear-gradient(top, #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
-      background: linear-gradient(to bottom, #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
-    }
+      #awards li,
+      #education li {
+        width: 100%;
+        z-index: 2;
+        position: relative;
+        float: left;
+      }
 
-    #awards li,
-    #education li {
-      width: 100%;
-      z-index: 2;
-      position: relative;
-      float: left;
-    }
+      #awards .year,
+      #education .year {
+        width: 14%;
+        background: #fff;
+        padding: 10px;
+        font-weight: 700;
+        display: inline-block;
+      }
 
-    #awards .year,
-    #education .year {
-      width: 14%;
-      background: #fff;
-      padding: 10px;
-      font-weight: 700;
-      display: inline-block;
-    }
+      #awards .description,
+      #education .description {
+        width: 83%;
+        display: inline-block;
+        background: #eee;
+        margin-bottom: 10px;
+        position: relative;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+      }
 
-    #awards .description,
-    #education .description {
-      width: 83%;
-      display: inline-block;
-      background: #eee;
-      margin-bottom: 10px;
-      position: relative;
-      padding: 10px;
-      border-bottom: 1px solid #ccc;
-      border-right: 1px solid #ccc;
-    }
+      #awards .description:after,
+      #education .description:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        right: 0;
+        left: -16px;
+        height: 0;
+        width: 0;
+        border: solid transparent;
+        border-right-color: #eee;
+        border-width: 8px;
+        pointer-events: none;
+      }
 
-    #awards .description:after,
-    #education .description:after {
-      content: '';
-      position: absolute;
-      top: 15px;
-      right: 0;
-      left: -16px;
-      height: 0;
-      width: 0;
-      border: solid transparent;
-      border-right-color: #eee;
-      border-width: 8px;
-      pointer-events: none;
-    }
+      #awards .description h3,
+      #education .description h3 {
+        font-size: 1.2em;
+        margin: 0;
+        padding: 0;
+        font-weight: 700;
+      }
 
-    #awards .description h3,
-    #education .description h3 {
-      font-size: 1.2em;
-      margin: 0;
-      padding: 0;
-      font-weight: 700;
-    }
+      #awards .description p,
+      #education .description p {
+        margin-top: 5px;
+        padding: 0;
+      }
 
-    #awards .description p,
-    #education .description p {
-      margin-top: 5px;
-      padding: 0;
-    }
+      .job {
+        margin-bottom: 15px;
+      }
 
-    .job {
-      margin-bottom: 15px;
-    }
+      .job .details {
+        margin-left: 3%;
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 10px;
+        background: #eee;
+        border-bottom: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+      }
 
-    .job .details {
-      margin-left: 3%;
-      width: 95%;
-      padding: 10px;
-      margin-bottom: 10px;
-      background: #eee;
-      border-bottom: 1px solid #ccc;
-      border-right: 1px solid #ccc;
-    }
+      .job .where {
+        font-size: 1.2em;
+        font-weight: bold;
+      }
 
-    .job .where {
-      font-size: 1.2em;
-      font-weight: bold;
-    }
+      .job .year {
+        opacity: 0.7;
+      }
 
-    .job .year {
-      opacity: 0.7;
-    }
+      .job .profession {
+        font-size: 1.2em;
+        font-weight: bold;
+      }
 
-    .job .profession {
-      font-size: 1.2em;
-      font-weight: bold;
-    }
+      .job .description {
+        line-height: 1.5em;
+      }
 
-    .job .description {
-      line-height: 1.5em;
-    }
+      .job .highlights {
+        padding: 5px 0;
+        font-weight: bold;
+      }
 
-    .job .highlights {
-      padding: 5px 0;
-      font-weight: bold;
-    }
+      .job .job-details {
+        padding-left: 5%;
+        width: 100%;
+      }
 
-    .job .job-details {
-      padding-left: 5%;
-      width: 100%;
-    }
+      .publication {
+        margin-bottom: 0;
+      }
 
-    .publication {
-      margin-bottom: 0;
-    }
+      .publication .name {
+        font-size: 1em;
+        font-weight: bold;
+      }
 
-    .publication .name {
-      font-size: 1em;
-      font-weight: bold;
-    }
+      .publication .year {
+        opacity: 0.7;
+      }
 
-    .publication .year {
-      opacity: 0.7;
-    }
+      .publication p {
+        margin: 0;
+        padding-top: 10px;
+      }
 
-    .publication p {
-      margin: 0;
-      padding-top: 10px;
-    }
+      .contact-item {
+        width: 100%;
+        float: left;
+      }
 
-    .contact-item {
-      width: 100%;
-      float: left;
-    }
+      .contact-item .icon {
+        padding: 10px;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        color: #32475c;
+        background: #eee;
+      }
 
-    .contact-item .icon {
-      padding: 10px;
-      border-right: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
-      color: #32475c;
-      background: #eee;
-    }
+      .contact-item:last-child .icon {
+        border-bottom: none;
+      }
 
-    .contact-item:last-child .icon {
-      border-bottom: none;
-    }
+      .contact-item .title {
+        width: 80%;
+        width: calc(100% - 55px);
+        font-weight: 700;
+        opacity: 0.9;
+      }
 
-    .contact-item .title {
-      width: 80%;
-      width: calc(100% - 55px);
-      font-weight: 700;
-      opacity: 0.9;
-    }
+      .contact-item .title.only {
+        margin-top: 10px;
+      }
 
-    .contact-item .title.only {
-      margin-top: 10px;
-    }
+      .contact-item .description {
+        width: 80%;
+        width: calc(100% - 55px);
+        color: #334960;
+      }
 
-    .contact-item .description {
-      width: 80%;
-      width: calc(100% - 55px);
-      color: #334960;
-    }
+      .item-interests,
+      .item-skills {
+        height: 30px;
+        color: #334960;
+        padding: 5px 10px;
+        margin-bottom: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 1.1em;
+        font-weight: 600;
+      }
 
-    .item-interests,
-    .item-skills {
-      height: 30px;
-      color: #334960;
-      padding: 5px 10px;
-      margin-bottom: 5px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      font-size: 1.1em;
-      font-weight: 600;
-    }
+      .interest,
+      .skill {
+        color: #fff;
+        display: inline-block;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        padding: 5px 10px;
+        background: #32475c;
+        position: relative;
+        font-size: 0.85em;
+      }
 
-    .interest,
-    .skill {
-      color: #fff;
-      display: inline-block;
-      margin-right: 5px;
-      margin-bottom: 5px;
-      padding: 5px 10px;
-      background: #32475c;
-      position: relative;
-      font-size: .85em;
-    }
+      .skill-level {
+        background-color: #227c74;
+        border-radius: 4px;
+        color: #fff;
+        padding: 1px 8px;
+        font-size: 0.75em;
+        position: absolute;
+        margin: 1px 10px;
+      }
 
-    .skill-level {
-      background-color: #227c74;
-      border-radius: 4px;
-      color: #fff;
-      padding: 1px 8px;
-      font-size: .75em;
-      position: absolute;
-      margin: 1px 10px;
-    }
+      #language-skills .skill {
+        margin: 10px 0;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+      }
+    </style>
+    <style type="text/css" media="print">
+      body {
+        font-size: 0.95em;
+        -webkit-print-color-adjust: exact;
+      }
 
-    #language-skills .skill {
-      margin: 10px 0;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #eee;
-    }
-  </style>
-  <style type="text/css" media="print">
-    body {
-      font-size: .95em;
-      -webkit-print-color-adjust: exact;
-    }
+      a[href]:after {
+        content: none !important;
+      }
 
-    a[href]:after {
-      content: none !important;
-    }
+      #photo {
+        display: none;
+      }
 
-    #photo {
-      display: none;
-    }
+      .box {
+        margin-bottom: -10px;
+      }
 
-    .box {
-      margin-bottom: -10px;
-    }
+      blockquote,
+      #education,
+      #awards,
+      .contact-item,
+      .publication,
+      .skills,
+      .interests {
+        page-break-inside: avoid;
+      }
 
-    blockquote,
-    #education,
-    #awards,
-    .contact-item,
-    .publication,
-    .skills,
-    .interests {
-      page-break-inside: avoid;
-    }
+      .col-sm-5 {
+        width: 40%;
+        padding: 0 15px;
+      }
 
-    .col-sm-5 {
-      width: 40%;
-      padding: 0 15px;
-    }
+      .col-sm-7 {
+        width: 60%;
+        padding: 0 15px;
+      }
 
-    .col-sm-7 {
-      width: 60%;
-      padding: 0 15px;
-    }
+      .skills .col-sm-offset-1,
+      .interests .col-sm-offset-1 {
+        margin-top: -10px;
+        margin-bottom: 5px;
+      }
 
-    .skills .col-sm-offset-1,
-    .interests .col-sm-offset-1 {
-      margin-top: -10px;
-      margin-bottom: 5px;
-    }
+      #education {
+        margin: 0;
+        margin-bottom: -20px;
+      }
 
-    #education {
-      margin: 0;
-      margin-bottom: -20px;
-    }
+      #awards:before,
+      #education:before {
+        background: none;
+      }
 
-    #awards:before,
-    #education:before {
-      background: none;
-    }
+      #awards .description,
+      #education .description,
+      .job .details {
+        border: 1px solid #eee;
+      }
 
-    #awards .description,
-    #education .description,
-    .job .details {
-      border: 1px solid #eee;
-    }
+      .publication,
+      .publication .panel-heading,
+      .publication .name {
+        margin: 0;
+        padding: 0 5px;
+        border: none;
+      }
 
-    .publication,
-    .publication .panel-heading,
-    .publication .name {
-      margin: 0;
-      padding: 0 5px;
-      border: none;
-    }
+      .publication .panel-body {
+        padding: 0 10px;
+        margin: 0;
+      }
 
-    .publication .panel-body {
-      padding: 0 10px;
-      margin: 0;
-    }
+      .badge {
+        margin: 0;
+      }
 
-    .badge {
-      margin: 0;
-    }
+      .list-group-item {
+        border: none;
+        margin: 0;
+        padding: 5px 15px;
+      }
 
-    .list-group-item {
-      border: none;
-      margin: 0;
-      padding: 5px 15px;
-    }
+      .list-group-item:after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        right: 0;
+        left: -1px;
+        height: 0;
+        width: 0;
+        border: solid transparent;
+        border-right-color: #999;
+        border-width: 4px;
+        pointer-events: none;
+      }
+    </style>
+  </head>
 
-    .list-group-item:after {
-      content: '';
-      position: absolute;
-      top: 8px;
-      right: 0;
-      left: -1px;
-      height: 0;
-      width: 0;
-      border: solid transparent;
-      border-right-color: #999;
-      border-width: 4px;
-      pointer-events: none;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div id="photo-header" class="text-center">
-          <!-- PHOTO (AVATAR) -->
-          <div id="photo">
-            <img
-              src="data:image&#x2F;jpeg;base64,&#x2F;9j&#x2F;4AAQSkZJRgABAQAAAQABAAD&#x2F;2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT&#x2F;2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT&#x2F;wAARCADIAMgDASIAAhEBAxEB&#x2F;8QAHQAAAQQDAQEAAAAAAAAAAAAABgQFBwgAAwkCAf&#x2F;EAEsQAAIBAwIDBQYDBQMHCwUAAAECAwQFEQAGEiExBxNBUWEIFCJxgZEjMqEVQlKxwWJyggkkM5Ki0fAWJTRDU3Oys9Lh8URjZJPD&#x2F;8QAGgEAAgMBAQAAAAAAAAAAAAAAAwQBAgUGAP&#x2F;EACgRAAICAQQCAgICAwEAAAAAAAABAhEDBBIhMRNBIjIFURQjQmGBwf&#x2F;aAAwDAQACEQMRAD8AkSvRcH4D65GmGf8AAk4o4mZc8wOWPlogr8lM5Hy00SBh4jHlrlDTNdPUoVBAbOfLW1p1JPwn6aQyrKrM0bD1GOutQqiQVLjPljnqTw4tUfMZ8MaTPN3J5JlCeYH7p1qEv73GPprw0uSRxak8KDUjoAfmNYswcdDkeem0zmJwpkwrdDjp6a9mc4&#x2F;0g1YqxwEg&#x2F;hJ8&#x2F;LSUuyTFQCUbmCT0PiNeUqMrzkGvEjF1JWQBuoOfHUkCS8WQXuFUkqKmnx0anl4c&#x2F;Pz03UWxIaSdZP2hXuQQeFpsD9NLbjuGjs9vesr6tKWnjHxPIQMemonuftQ22KSVaG01VainCy8QRW8&#x2F;DRoY5T+qKvjknCOLgAHM48TzOvMHwyyLjo3EPkRqstR7UN6Z2aKjo4o8nhjZ2YgeZOm5fae3LDcjO0FJLEcKIACBj59dF&#x2F;jZP0RvRbIEHpy1qcnmNRFtr2irFc+FLj3lvk4Rl88S58flqS7XeqK&#x2F;0MVXQVSVdNKoZZIz56BKEodkppnytzg9Bqsva+e9uNST1mqWAIHhxY&#x2F;36szV8IAJ56q&#x2F;2kv39+pEB5PMz8Oc8uInVsfdFmH&#x2F;AGW0Xu9oR8DmCTy1IUSjHLnjqdDGyqcUlip0&#x2F;eKjlj00SRPw6I+7IQrUADX3p18dau9AAPT018lqO7jZuvLlqpI57f25X723LbNvWrncLjOIIzjIjzzZ29FUFj8tdMdj7QoNh7Ute37XH3VBb6daeIeJwObH1Y5J9SdVr9ijsrMVHVb+uUX49UGpLYHX8sIP4so&#x2F;vMOEHyU+erYDlrS0+Patz9i2WVuj6o5k6zWA6zTgA573enNPExiQMo58J8NDvvPeA4AyOvmNGN3QGNiAp+ug6rQFiwADeeuUTtGozzxkE8hpJVo3FxoFDY++sSYh8PgHPXPI62PnhPQ6sQI0qychlCny19aXnnlrTVJ5cm89Ivfe7bhkQK3hz6+urI8LmPGCCBg6T8DROUJGP3TnqNYKpHHIjXh3VhjPyJ8NWIZsyPEfbTffdwW&#x2F;bFrnuFwlWnpIlJZ2Pj4Aeuvb1wjViwHwD4ueMeuqrdvvaeN23wWugnZrXREqcH4ZJfFvUDpomOHklRRuhH2jdq1d2gXU8ZamtStmGkVsf4m82OheStJh4SOBR0wP00OipxwjmzNzY+WvdVXyY7uMAH+LW3GsapAOxzpSverxj4yM4J8PnpwNKHUM2Ac5yTkjTFSJUzZaNONvD&#x2F;edOlFbq2oqEiCs7nqPAnVt69k7JP0eUmFHOxViE8efUDz057U37dts1sVxo6qWmYEARq54OHP5SPEaZ6+iq1n7uSPgUZB&#x2F;rpHGeOcx4zC0Z+I+mTr0oxmuStbXyXQ2N2l0e+bQ80YWCrgXM0BPNeX5h5qfPUE3cm6bzpUznhBIJPn&#x2F;APOhHam6a7btQau3OFlenCsGGQVIHLRLsSc3vdUM&#x2F;PHCMZ8Mf&#x2F;Gs14fG210Gu0T9aKaSGihClRhRyOnERyYHxDPnjOvNIAsCDGCABrcpydALJHgQyk85Rj0XRL2b9nlZ2n7&#x2F;ALRtqmdkSqfiqp1HOGnXnI&#x2F;zxyHqy6HZpREhI8PDVz&#x2F;Yp7LDt&#x2F;aU+8q+L&#x2F;nG+ALTcQ+KOkU&#x2F;Cf8AG2W+QXRccd8qInLaixdks9Jt+0UdtoYFp6KkhWCCJeiIoAUfYaW6zWa10qETB11mvQ6azUnigdyy1NxheFsc4wcj76Dp6kBypXhI8Dp+nubvTFeTAjqP66Da+tSM5ZHbi8Y14sa5GPHBsSQrZlfOR10ml44+atlfEHw03q&#x2F;eqHiaQDP5XBBH31uQF15uc+uiIoomPOviSdJp0jlU8XU9CB01qqIeFuTYI89JWeQHm4B8tEsijyXNM+GPLpxHpr2aosTgjHhnWpwzhgTnPmNNxfuZCrt8PmdETRFAt2531rL2eXKXjCyTKIE4Tgkty&#x2F;TVOVOeHmT46s97SEPvGwUlSUFYZ0JXPM55arFG692i9WIAIHjrR0&#x2F;ELAS+1C23UklXUDhBJZsA+miWn2e9XVU9MnIufibyHUnRNs3Zki09NMyZ414h9RqQtobXzf8AidOKJVAxjpkjOkdRq9jqJtaXRKa+Xs87d7LIbfaEeSP8VxxYxk8+n6acbFs+ktxrq+dVCwQyScxyDM3CCPorffUqi1CaJOFSv9kaVWLs9StkZaxSKZm7xlPiAzHH66wo6qTbcn2dFLSRSSiuiDqXswnqdn1G4q2ApJWMfdYmXmEz+b7dPloDvXZnXW+xCrenZGnZ1jUrg4xz&#x2F;nq+h2xT3hKeneNfdo8YQDAwOgxpk3L2fRXaWOHugIkDEnHidO4vyEodiWX8dGar2c&#x2F;6OnNtgVZBw&#x2F;AsZB6nPT+R0&#x2F;dnF5W1bvo0k5U02YCxHIEnkdSL7SPZ3DsWrs9ZTR8NM47twPPpn9dRBZpQlXTFecizBgPUN563seWOoxb4nK58MtPk2SLbQGfA5JjW8Mw8vXTfR3ES00L4ILIGIx05a+SXOOFMtn+Q+ukjyDvsl7Oqrtb7S7VtxOIUTt7xcJU&#x2F;6qmTBfn4FuSj1b0107oKOG3UUFLTxLBTwRrFHEg+FEUYVR6AADVfPYt7J5Nl7Bk3JcoGjvG4eGYK4+KKlHOJfQtkufmPLVi9amnhtju&#x2F;YnklulRms1mvLyCNSSQABkknppoEejIBrNUm9q72w0hFXs&#x2F;ZNcM84q27QNzJzzjhI+xb6DWaSnqKdRQVY2yn1g7e2pSsF6ppKUk8PfxEvGf6jRtRb3tl3VZqStikVueUkyPrqA62JHByuCDzB6&#x2F;bQheYZ6CpSot80lLNz5wsRn5+eszwxk+B3e0W2F8iJ5uCPMHWC+07SAKpfH7ykaqjaO1O926VIqz&#x2F;ADuPIBcfC318Dong7XKfCtJxxN6jnob07QTyJ8UWHqrhGnxHhYaRNc6dh+6NQqe1WGVlVajBYcQJU68v2jxZGZyxJzxKmMaH42i1WTJ+04gpJIK+Y0iqrjTujniX1GopHaND&#x2F;Hn1xppre06BGYCQq7dAATq6gyHwL&#x2F;aHuyLsVKaNg3vFUgxnnhck6rzYqVrhdaWFVJZ5FAA+mj&#x2F;tVv0t8tdGjPyjkZgvnyxnTHZ7ZLtXa77mSWJqwFRTU&#x2F;J2ALDMjLnIGMgZxz1p4k446&#x2F;Yu3eRWWClnorDRQxTSLGAgx5gYxpy2zvOwUz&#x2F;FXRB+WS5xnUV0W3btdlSuvl8jiqnRX7mOjDqgIBA5kDx8BpQttgleOE32yynOOGqozCT5c0Y&#x2F;y1jz02N9ytnRY9Vki1tXBa3a93ttzaB4qlJYz+8hB0ZT1tNE5CH4cE5+WqjWLcr7EmD18ApqIYX3qnm72Bc8hk8io9SMeupIum8IrZYv2nVV8cNvZeczyfCc+RHXyGNY+TSyhKkrTNvHqo5I2+Gix+17layuaiugjY&#x2F;lVpADp4uMcDwlqepikPT4WHPVHp9wWu91KSG336ujJ5NDD3S&#x2F;TjZdGlpqIbdTCekt29qRlw3F7v7yo+iO3L6aaWl+FMWer+fHQ6+2PQGp7PoZgPiSoUBvL&#x2F;jGqlbMiFbW0MQ+F2qQPi8fHVoe0DtS2v2h7AuljqrzHDfYEJWlrYnppZGHTCuBz1W7ZNK9FuegiMbRymUApIpBDE4wR4a2Px0Z48MoTRz&#x2F;AOSlGeVTi+0WKWsSmhVcBQB0xjR97PXZwe2rtYt1okQtZqM++3NgOXcoRhPm7YX5Enw1HZsFdLy94iA8sHUn9jHapuTsRpblFZY7bMbhKss0tTCzP8IwFBBHIczjzJ1Mm1yjMSs6hUwSGJURQiKAFRRgAeAA8tbgRjrqglP7ZvaDAH&#x2F;BtB4jnnA&#x2F;&#x2F;q16k9tXtBSNmMVnUDmSYG6f62mY6uUVTiB8LfsvrPPHTRPLK6xxopZnc4CgdST4DXP&#x2F;ANrn21f20azZ+xqvhtYzFXXaJsGo8DHGfBPNvH5aibth9s7fnavZajbEc0NHbXbFTJQxmM1C&#x2F;wAJOc8H89Vhv0dzEJliVeJTg5bko88eOvS1DycdFo4tvLCf9sxl+8L8b+nhrNAFJUXIy4nMYT+JcjOs17aELt9uvYHX7ItNXdrstkqbdDzNa9SKZ&#x2F;kA2CT6AnVLb3ebbVzf5pUARc8fFxg&#x2F;XXRf267W90tG2lkihqaQTyr3U4JXjKgcXzxnHz1zh7ZuzVOzy707xzQx0txBkhpkzmPzHyznGktNkjKfjl2OZNPPxeZdA9WVEfeAhlPPwOmeqrWjlP8ACCfDWhIfxFBzw5588aUyUsUUTtI5Qf2jy1qUkZ6sWUFRWVk1KaeMPGTwYA+NiemB46V3C6y2qpMFRRVCTKBxII+a8up0ttlda7Ve7dLbqjvKZJIiWTmUcrzAz5HOkm8d0NcL9W3GDNRSQBaZ2kPxE8J5gfPlpdwblVDUJJRuxxWUMisPykZ0DVtyelut0USfkVlhRhkg5HMHzAydF+0qs7mpZWSErJAVDheY5jkf00I3yq&#x2F;Yl+v9NVUCTSzoYlaU8484PENTggt7iyuWXxTRv2&#x2F;cEvV+tMV046mFm7twrYMmScDPhk4GpM7LtqU24KDeVs4Pd45lSnUsOMxdSPnggfbUIWuWWOtR42w0fxrjnwkEEfrqznZBTLHeL9IilYqpKepGTnm6kn9Sde1beKFoNo0sktrQY3ns9O6J0M3FJCFHDArd2repx101L2OwUtX3n&#x2F;J6Hj5fG0zf79SjQxzo0XdBWT+F+mnuvuBsVmevrVgKKOgJyRrlv5OSLpM6+GkxyjbRX3tC29FbNrVVvpUcVE8Zpooyxc5ZgOZ8gMn6a27f7A5tnXzY9xrUqJ6GrrsSK&#x2F;4kY&#x2F;DYqxAHwlX4fTn6aOjbxuW+0VbWCOOA4lRc4+QxqzdroKO+7Lp6dZYfeYGIjVmxn&#x2F;jppn+ZOEVBf9BPQY8jc5f8Kg7x7JJ7lOsivWSQcXFxUzj7kddHPZ&#x2F;sO82xaaawXa509XT4LxXIB4JB5ZAyPnnRPJuOHbm+auy10L0lQjg93gOjAjIKnPT01LdqeCtou4hR0ZxzJjxy8NLvPNR2sO9Nju12Vb9rPb8m8KTaqmmgW+rNUvPLGoJEEcBkkBYDJXKjHqdMGztnV97uFDvO701HS01xpopqaOmnEnxqMPxjqrZ4Tg+BHM6tJ2rbeFJ2Z7heGJGrp6RqWE455kKoBnw5tqJbVsuk2&#x2F;YaS2zoknuUfDI&#x2F;gXA+M&#x2F;pj6a0tJqHLEoL0c7r8EYTc32+j4rxg47xM&#x2F;wB4a9iaIf8AWJ&#x2F;rDTTa7hYrrXQ08VMU78N3EjphZeHkeHStZ7EiVrtEFWjUPMzR9ASQMefTTy55MmeOeN1NUb2qqeJGd541RQWYlxyGgDdW7pbuwobcxjpWz3svLLDPIDy9Roe7TN8QQ3CkoKekNLFUZMQICmTqOP1AIx9NCPZnuCorNv1dZcn73upgsfw4ZgRnPIdM8s69KLcdxMeHQbKlTa7TUVFHHA3CPxGmJyB6AdTofr6+WppzHKsYWTD4HUY8D9tFNHNDdLJPKhZSWxGhGOI4PQeONIbNt6OqmYN&#x2F;nEsSs58gFBJ&#x2F;4OqY43yyJSroYLTtiuv0qRU0LAN++R4eYHj&#x2F;AC9dZorMdxuNmmiUtBDJMITHHy4vgzgnqdZpjcKtysnP2ivbKsvaduMbN2nRJcrJSyq9VfJFIcurYPcDwH9o9emNVu7VN60l0sk67jonlj4hDRxRMFkJXJDcXhjPPr10A9kMObnUSMQTIFjRCccRJ&#x2F;8AjXjtvuLS3umoF&#x2F;0NOhOB&#x2F;ETz5&#x2F;TR8elxwyJ1yOvPPwON8MFYXE0Uci5Ck+JyRo92NtOi3jc2t1dG7xSQq&#x2F;eR&#x2F;wDV9Mn0P&#x2F;HjqNKSs&#x2F;zIwJEokD8Qm4jkgjAXHTrz1182D2D7e212X2&#x2F;b9NQQRTfs6OOar4AZZJWUMXLYyTxHOg63J4FUe2V0qUpXLpHKe4bIrNtblrLWVkiRakrTyTjg71FyQw88jy89B19genrG7xyzy&#x2F;iNnzPnrsHaPZ12zunbU9m3NQreErJHCvVANJTjGFEbYBUqTkHz1y6vm3Eo9136nnRXegrXt4jK8sRvwA48yBnVdPqt97u0TlwxTqHQV+yTSW263+&#x2F;UFyqBTrJTxPEzDlkOQf0Oh72mNoPtPtsv9vqamCpVoaerjmpCGXu3gRl6eIBAPrpkpq6bZW46iqtoUOU4CHHwgcj4eo0x7uv9buzcM9wqI4&#x2F;eaiJImESkD4VCg4z5AaNGD87yp8NA5teJY&#x2F;aE1PYK+301ur4UeeCtp3mkEKFu7jEjJ8flkoTq0XZXB7rt6yM+eOW0xuWJ5sBIcfYNj7agbaG7bxtG3V1NS8DRV1G1DKsyluCNmZjw4PXLto87Dt0VH7bo7LVzPJAtLLT0&#x2F;GPygEOF&#x2F;Q8tC1lzhX6GtE448nPsn2O+mAqDnPp4jQvu3dP&#x2F;ACmhNJESIRlVH8R6E6KLKtO9zCzKOHoAdRt2jWu67YukT2fDUzuqTFU4njXPNlHidcziinkp9nXuTjDgQw0l9iukEkNVPMEAVYeLC46dP66mLbdl3duWlhWG4z2gQScTd0wBY+uRzGm&#x2F;Z3Y5DuK6Fqi+11JTuZO772PBYDh4WBxjnkn10a37Yi7JsVPX0XaC7SUoT3ymWLvHUM6AYUcwOFiefgCfDV8uWLdf+HsbUXywe7WdsywRRXd52qLnScMjyt1YAc+npz1JHZZus3ChpWMnExA5ny1GVdetz7hlvNorKFamhgqpIaK6OvB75GAeFuH+upF7KtoHb1pooZzxSxRgMx89J5nUavkYjK236JKv88U1AjzxmaGFveO7HPjKfEAfTi4dRJW24VsU6SKxWZWViB59dSnum2VE+zql2XhoLiJbaXRisikqGLKw6YHLPnqFx2JWnnm4XtvncZNaOhW3HcvZzH5GbnkSi+hksvZ21nraOepqUkp6AH3dVQqwBGCWP6&#x2F;PQ12jKYNpXCUPCX405xRqpfLjmR1Pnomr+y2OljqP2W12rpjGVFK1c54hnmSc8uWdMVu7OLUgFNVWgQTVagGNmdnUc25knyGeXmNakXGKMrNlnmkpTI7pblS76lSG52i11IobHHaEuc7OZYcS953oOcGQ80Cgcl+uiyx9mXf0lXb6dJbTYKqRZjU1y8UnwDkqIMEA8+baM+xDswpoYq+Q0lOJxOwhfOSiDh6Ejr8R56k+87IqngSFFUq5AOSc48+mnHtUKQjLJLdwQvtbb9NT7GkmEKvVSOyCQqC5A5BR&#x2F;wC2nDbW0I7GqRVA&#x2F;GmgdZiRggsvMfroebsU3nQ0nFJXyUdFG&#x2F;GvHUSqqknkenXprS3ZFfKuVpKi&#x2F;Ru7cy7VcpydISTl&#x2F;kHjJLtBoLfQWswxwBAhlEjhh1bAGR9ANZpms&#x2F;s37nujhqOpSdcfnJlIA88kY1mp+K7kUb&#x2F;0V37ClR664yusbPFTxhQ45cR8dCHaZUNV7nPgoHD&#x2F;AF0&#x2F;7UoKulvFzgorg9BFH+GcKGHLkMjQvuyiqKaqVqmqNS5YsWxjh8s634tPITK&#x2F;EkNu0La993Nb7WjBHrKuKnU+RaRRn9ddzaWH3a2xgyACOoEGeQyE5a4T008ttuVPVQMYponEiODjhZSCG+hAP01d7tI&#x2F;yiG4I9m0drsFkm2&#x2F;uWCqWeorK9UlSaIrxcoyP3iwOemMY66Q1+CeacNi4J081jjLcX+p2T9vpTwkB2CMoHhlsn&#x2F;w65A9snDR9tvaLBBIrIb1VkcAwMiYnlqeOxL&#x2F;ACgl9k3HcK&#x2F;eKWwpBSh4WhjaEuy5ygAJyWyOfhqst6qqzdG4LhexCvfXGplq5EMgABkYtgegzpLDhniyT3oalJOMXEa73AHrOMn86g9TnSOKhR&#x2F;3RnzwdPkFnrqpoveI1BRAmVkHxY8TpwisUq&#x2F;DwtjP5RINO79qoHtcnbB5KVcEErkeAzo+7NYqeisO56swxNWwyW40szLl4m95+IqfDK5B8wdMyW4xk8UcmehHGNFu1FprXt3c9TWQvJDDFTSCIsCHcSkqGI6DqT6KdAnLcqDRjTRJ&#x2F;wC0THUKyHhbPgeh0oucvvMILL3q4PEMeeh2sq8T95GRhvIacaG8pHGveYx4+WsKUObj2dLjnSpi+wbsr7C3dRxPPD+5nIK&#x2F;LU27JuEF7pllmh4DJ8Uq8PNz&#x2F;aPjqJrJdLZIR3igqOoI56ljb+5LVSU8fdlFPD9BpbJOaXCNWOTjlj5uWkjjSGVEVcclA8Brxb7l+GkMfxzNgADQ3et3m5Huqf41zjI6HWis3Cez6z0d0qKc1ctVVLCY84Ypgs3DnxAGef1I0viwuc1u9iefLLa&#x2F;GSc1VWTWuC3TVDyUkDtKkJ&#x2F;Krt1I+ek4ogF6fppZSNDcrbRXGkfvqKsiE0EvDjiGSCCPBlYFSPAg60XurktdpqqqKMSvChcKxwDrbpw+Jykm222MUND+z6wVETETo3Erj90+fz0jnpIElkqfdozPhm7zgGcnOdPLMZURsYLKGIHqNI61MQS4&#x2F;gb+R1exdrgrDtnt&#x2F;uGwbtd09wjrxLIFXvJWXu8dcY8+Wjna3tY1t83BbLe9jhRaipjiLCdm6tjpjnquG4ZMXitz4SnppLZa9qa8Us0EjQypIrKynBVgc5HrrX8anja&#x2F;0ZsnUyy&#x2F;a92sX1d51lNUU6NTngljgk4uFcqOgz6aYKftrvsESxJBTRxqMAd3n+uo7FVLXSNNLM00h6yOSzH6nSpEUtkN&#x2F;s6Sx4lGKiwzbJKX2gN2VEXdSSxPGCQqFmxj5Z1mo9o1VVRjHnPP8vrrNX8cP0RuYu7f+xmj7J7hFXWc1Bt9145JpJn4j35YlscuQwQQNCFl2TbdxWS01Nxh77vEM8x4yoYknmceg1Z7t4WDtM2Jc6G0Us1wmt597E0QBRAoPFkkg81z0Goc7P8AbUlxpLDa0mVHnSGIcXT42x&#x2F;XRYZPjd8jeONx5Iw7ILzse7bX3ht6&#x2F;wC1I6+qFdHcbZXxMRIE+KM07nIITBDAjnxddMfbbb0XdFuk76Y+8WqkcRzMX7oLGIxGpJzwqEAA1KPsodhlFvbcfaEl0mWNLLVLSAR1IhPF3kmTz6r8I0p9qfs9pLX2gdm9nt9MVhrWFKZixPfEzouC5AB&#x2F;N19dMb15uwT5glRWeOwyRbhmtkjd1MkuOIg8uWc4+WNSNabIkNIqO0BMfLMqnJ1KfaB7Olz2z7YO1tp&#x2F;Ak24VSoSUzrwYIkVzxdBju9S1fPZ0pLJPLDLf6epmU4ZaeYScx4ZC40DLm3VXNhsUNt2Vpgt0ITOKQ5+eslpIhnC0qjH5ssBpP2m9oNu2rfq2z2JXrJKR+6lrJ2+DjH5gqgcwDyznz1E133hc7yT71VM655IOSj6DVo6ecuXwTLPGPCJHudZa6DlJV0skucCOLidifDkNTxSdknuvY9fKBkQ3W60juCikBXCMI05&#x2F;Nvrn01V7sbtZ3B2n2GGRWeKKb3qThxyWJWkJ&#x2F;2dX0pKn3m2080sZDxM8Uqk5IcE8sf2lwRnxC&#x2F;xaM8ShwVhlcuSsOy73JdLTHT1YKVtP+FIrdcryOftjT2waHIPND1B05dpOwpdrb1q71Tj&#x2F;my6VkpUx&#x2F;lSQ4cD5FXUj662U1CauBeJc5HUawc3wmzpcP8AZBDIJHDFIZpUzzwD&#x2F;v0XbZjnZ1V3d+f7zHH20hg27KJgUXi5+WpO2ftYngLpy8QNK5c6UQ+PBb5CLZ23HqZYpJBlAR8PnoW9rZ5rFtnbFwp+JoqCtaaeJGIZkKcPLUy2s09loy8hVQBnOgG97IuPtBXxaGmhP7CoWEtZOfylRzES+bOcD0GT5aT0ann1EaGs6jjwu3RJXZRYpaHsJsN1lctBW1L1EKsCvAr8Snkeme6RseZPnr1uOB7lZqqmpzEJZFAHen4eoPP7asQbJQ01krLPFQQ1ttp4HjSgkUFJvzNwY6Di548fHpz1zC9oSlp+yXtju9hhNbJZXCVlAfemDpDKgkVDnrw8RX&#x2F;Drss+hk6lHk4n+RGTbl+y1BnjjRQzoCBgniA013O70ENPMZKynT8NvzSqPA+uqmbdFi3dIIYruYqs8xT1tQYy3oCTgn66Jl7K2lBWNOPwKl8&#x2F;rrPeFx4kS5xfTItvdGaiprqlPycfJsctN9oo2W50YDczJjkBqVa&#x2F;sTr623zx0lKzSMeEDOMHlpus&#x2F;s5bhgroJ5YRwxPxlQ2Sfl009Ca21YhONys1w2yTIPfMB5YHLSr9mOpBWUj6jRfT9hN3KA+5Py8RzP6nShOwu6nmaB2Pj0B0tYXgCYKOUQLg88f9oNZqQqDsIu1ZCj09vaRG6YYDP66zU2v2V4J8stp2vtWGRLRaqenaReB5QvxPyx8TNzb66rJaLJU2HdFI3EIamkqSuUJC8KyZGPIYI+mrGTWOkqRxNB3h8GZiBqIt4W9KDeLRBOGDiVhjy4Rn+uqRSXQ9jfIg7NbTU9mXbXuizGKeusN+U3SmupXPdSAktE79OrEfQHx1u9oenpL5ufsumaqMs1PflQQhuJuAgMSMeRQakJNt28xoyQ92hAIVGOkUGyrNTX9LylGGuccRgSdmyUU9cDpn166NFbp2Ua4of5LDb77fLffKhA94iHu8dVIOOVIzluAE81BPM4xnoeXLSG5UCwWoXCXJWCkNWS37qgQsQPIEF&#x2F;vp+sVZBQVdG1XhPeJG7tm55K4yfQDixn1x4HQr29Xw7R7HNxVgXhLWb3ePPgZDBD+hY&#x2F;bRY46pII5NLk5n19S9zq6islJaWokaZiTzJY8R&#x2F;npIRzx00rKcgB08Ma1yJhj&#x2F;AD1qLgzX3ZNHsk2H37tAuFdJwmnobfJxgnmTIQox9A2rbcaxS1cEwbhrJlRcHHFLwoFPF+6CBjPgQp8NQR7KO1wmx7pc5lKvW1RFO68ie7UDHqCxII9TqbKuGramkHKXuqdJI2j5iQhHPPxye6T&#x2F;AFj56SyO52PY1URi3TcK+a67YtckcctgrquSG4xyp3YZzFiJkbHwEgMQP3XXhPQaTVWzqjbdclPKry0MxZqWqZcd4oYg5A&#x2F;KwPIj6jkRpz3hWSVlhulvljMUsae8RO&#x2F;EBK6Mwz5BisYPzwep1podyXGloJbbWQPdKSqrUePAHfw8mXj59fiBUt4jA6EaT1OnWeHHDHtJqHp5&#x2F;LoWW+0tC6sAMfLRHaayd6qKjpUaoqpM8EUfU4BJP0AJ+mmu33KO+WlJra3fTCTuXpcYqI26YaPr18RkaknY+24dmUnv9XJCb1Uo2Q7ZEceASisOh5fER6KM6wcX4&#x2F;LlybMipLs6HNrsWLFvg7bBS9UM62irrbvUVSwU2M09EuSDwk4Jb6eGMHroh9ljde6919od5rqegXb3Z9bqOWlioVj71e&#x2F;Lr8TyEZaUmLic56AAADo79oFJeO0Wiht1ljSiDzCnlrJU&#x2F;EdHISV0XqCnxKM8wOPxI1KOwNnLtjbNDZrTTGKhWm4YnmYhQSuJZiOZLP3qnJPPGemuv0mkx6f6KjktTq8moXzZJBnEEoRVZu7dSzEjLOzOhOR54HP18OQHPz&#x2F;KXbXit29dqbjgRwtbSPSyfDgAwy&#x2F;CPnwy4+QGr09xWHvZaqr4+OLvjTwAAcuIqh9Mhsn5arH&#x2F;AJRfZ6V&#x2F;Y9abso4p7Xcu5OH4hwSq6lifE8Qj&#x2F;TWm+jNOc0jMk0AOSGJiYenhoi2R2h3jZl&#x2F;t1ZTVdQ0dPOsstP3p7uYIwLKR5MBg&#x2F;PQ8SJ4IJD1PCwPjkaTJKMAt+7Kwz6ZI0Gk3yVSOwlp2bad72CG72vhpKuqMBC4Hdv3kEL5YAcjmTqPP00I1lqe21s1NUxd3UQSd269cEHnrd7F+5pb52NbdmqpWE3eKuSw+IRDgA9cimH+tjUu9pWzxdITc6dQayJVZmwMzx48cdWAx+o0tqMCl84ItbIsp6cdVUfLGlDQIUYleEgZ5DXuGPg5qcqfDW6oKilmcYBCE6yGQmbdr06i00uVw3Dnp11mnGxKI7fTqRzCDr8tZqlItZDFVdqiIESryPLhCkDVdO1bs33Xvje8lyWRLZRyR9xHUxO5EaDP5kGGLHOrMhliClm428C3Mn5DWpg9QckiMf3cnXozcXaNGgM2pPVW+x2+hqWFbU01PHC9UysveEALnn0zy0&#x2F;VkypECWByccvH&#x2F;AI569XQLEIo1&#x2F;M5J5emkFzq1pUwVz8JycdMDOm8X1s8Gm17TT36igp54RKr1McgBLckU8JblzJHeEKvi8pJ&#x2F;Lqv&#x2F;ALZV0r9sdj8G3qlDKor4KSCrzkyQ90JWDf2hJEQfkD4asNsGpjWndJHZe94YUKHhcHhY8j4YUSn5up8tVe&#x2F;yhtyIptn0sM4amqJquV0QnhLow4SueeMTMB&#x2F;76aiuSk29pTTh549NYImmdY1UszEKAOpJOANe1Iz00b9im0pt5dpVlo4kDrFOlTIGzjhV16&#x2F;UjTEnSsTSsuP2MdnkO2ez200c1O8dShXvQx&#x2F;K8ioScjp&#x2F;pDo1O1ozloY3UI8gUr0C8Mr&#x2F;AM0Xl&#x2F;Z092+w1MNFIPek4Bxj4YgFx3TDHj&#x2F;bHyVfLRBICBUFyA5ebKDmASKxSPllh9xpGm+TRVJAOu16iiaB1dnCyTU5SYcQZY2lIz5592Uf4m89aZtvrSUsCSUiOYe9i+HkD3XeBT8s0gz&#x2F;AH21Ic1MwjmkkZYxTPPKQ3X8Q1PCPtKv30uq4KOz0dyqECzywRy900gzwySPUfF8&#x2F;wAWPR1ib7BuaQ1ezX2e0jbnuFzqqbvYKRhbI3nxlF4pGJI8coYeZ8GPno6utBTRb1vCVdAkEFup+9gCxgABpC+BjzCL9tN&#x2F;ZvcITtnd00aZimq6qSCRTz4T36R&#x2F;7MSY+miTcFTTXPd+4qJi0dQ9sbgzy5q7LgHxz3mm4QjQtJtysT2Q+5+6mGJI+GkWR2xz4iYCzfUxufvp+jnqY1WKJHnqEpo04WOAWPAoB8OqD76T2GiSSn78tw99bRwgjOG4Q39W+2l9Vdo3qa+SPCx089OOIHkT3kPL7ow0yl6QN8jnb6MmogM5Eid8IShUYUKjNg+fNcaiz2jNsDf3s1b57yIyS09G1xplUZPeQcD4A9TE&#x2F;wB9SvWzNDS1M6HhYRtM3j8XdAn+Y0kofi2feYe4SZR70ixMMq4WSccPyZeWvdplWjiNBGyd5H4RyED5eGkkSf8ATFPPhmb+h1IXbNsR+zDtg3Vtl0KRUdZIlPnlxQ54om+sbJoBU8M9eT4txZH90aXKcpnRP2Qb6sPZPtRvjWWlklm7teRaNGkB5dGVx7ypHgQD11d73UVEXAPzLhlI6EBhkj0OAdc8&#x2F;ZYvb0HZjtt45O&#x2F;aUyU8aOchW77PB6EyKi48pyfHXQS0L7nbrd3bvJGkAQcY+MIAvDn5AD9dEgy0l0QluiCOybsraBT3a8pok&#x2F;8AtvzH25j6abq+UrRTEEkFeenf2hLjT2rc1tl4As0kMp4lHPhEmF&#x2F;r99R&#x2F;TbupbnTSUxcRz9FU&#x2F;vZPh66wsy25GkRRJtvI93ix&#x2F;CBrNaKF+BQR1HhrNAPEStGE+M5ZvFm18XimGU5L&#x2F;Fj+Wt6Ux4y0uDnonFy1smqO4j4sZHhg9fTGhGmNddSIxgHipJODzPLTDepe8JjWP42IQA9SCeePov6D10QVdRJL3blODPRDzOPPQ5cUkkrFLN8SyZTB5gBccv8AEjfpp7G&#x2F;giR5e5im2VUyUrf57Sh62NxzzwGIDP1A+2PHVUvbi3Gl7uG02gl7yjEczRsJRKcusJOT58uYHIatBtUxS++QSfiLUUEkOAeWGCkY+qY+2qte1ht+b&#x2F;kvZJcgC0Vn7NlBGFQd2pQg8sqylW5chjHXOncbTSAZE6K2LKFUZIOeWc6tr7Gu047XZbjuipp+KprJGhpH8VijwWPyZyP9T56qxHtiqm3VBY4Hiq6qaoSnjaE5V2cgDH310g2jtGHa+16OzUDZioqEw9504sI+Tj1JU&#x2F;U6tOXopijbthj+1lpppou5+BJBwjPJgxIb&#x2F;ZkkH016iudVKzcCBAJIy2B5vDn9S33Ol7WmJJaojJBYkZHjmo&#x2F;9tPHuUSiqbuwpEwOceTdP0H21EVYdpMZo4aqogrA&#x2F;P8emjfnnlxQf+o&#x2F;fSu6ztJt26MULB2pRnxVgaYMD9z99EbUi06VsgGBxU6uv+JOePmo0wbxpXt1suk0X5H7p5F8MgwBj&#x2F;sHV3FqIG+Rx7HaISdn1rjkZhJVMhOD1yx6&#x2F;MS&#x2F;rr1uRJo90X67UglaOnp04g+SDmPvMen5c&#x2F;PTv2RSOezXZUrRnJjjViy5DN3tPw&#x2F;oD9tZbLi8MV8mkicxyQsrxsckYhfl6jKn9NMwinEpfI+R16262S1CPxwxWxOR&#x2F;dIWoyPoUA1lLR8dJfuMcCVcsTQMOq8E0wz&#x2F;sr99Nl3EVZeZaYAe73KKKmaMZyhlmqYyQACSR3mcY540VVVn&#x2F;AGlTSRLLJAY3IV0jlzjic&#x2F;8AZ&#x2F;29F4RCTfSHKsk76J48cKGpjpXJGeciRAHPlh8fTXmxU8gtnDgkmrYlR5F1b+Tt99auAvQSJJIY3lraeQGTiGO7eM8P5OfFwYz66e6WiltdylSYKDH8RQSoPiOPMjwA1Largq4vqjnv&#x2F;lHOzlrdujbG&#x2F;wCnQvT3SmSgqmxyEsKAK31jx9U1S+vcRNWtnkQuPtjXX72oOyiTtM9nLcllijSprrbALhb1idWPeQDJGQT1TvR9RrjjuCr4KLjOfjVQc+mdLsE0XK9lCqaptu0qBGWGqqSDTjriTjJWTB8SywDI8EORrpejRxtFFhoY3yscZ8AQxH0wB9tc5PYR29UXfce25o0&#x2F;zSihJkmwSY2aN2GM+HGuc+BZhro0TGXUZwyIpTPMgKSpH2I1eC4LS6SK3e0ktU++KQz&#x2F;APRhQotPz8AzBvrn+moklp8Oro2CDkEHnnU7+1XCsVbtqfkokinQAH+0rfzY6g1Rjp+usnOv7WCZIGx+0VSYqC7SKkpISOpPIN5BvI+us1Hs9IJBxAc&#x2F;LWaWaR6w0nql5KhSWTyHh89eFh7vEjyAy45HGAPlr4khi4guEPXII660zVXCGZiW54A5ZY+Q0sjWNdXwvPAjv+GRzK8ueef6aG7pSzwQxzlGjMMLTMc5HxBWz6c+8H+E6eZaeWoKsRlDnjUdFGNKa96hrcJ0jE8bSLDKpHVVClj8stOPvpyC+KJQNbdqYaC8xRGMJCphick&#x2F;ugZI+3LVU&#x2F;a4FZTbmokWOSO2y08MzFCSjFk+AkeHwk9dWj97hqahsxSLKJJSfDkqsCT6kxD6tqBPa7t7VlgoKmNeGagijjPCefdg8GT8in6nTWJ06A5FaBH2TNkQ7l7R4b4IMwWiDvCi&#x2F;EnvDNwRkeXLibHmNXZhikhpxwxMpNMwyAefwkD+X6aqB7F0tRVXLd1YHaKRaenTMXwAsS&#x2F;PA5Z9dW4otz3K1T4lkFVAzx&#x2F;DIB+VJRyPzGc&#x2F;XVpVu5PY+IhpBIZKupUZI75Y&#x2F;kWYqP8AzRp5jhNVTyAZzMycIx5mLH&#x2F;nDTPar6twp0lki4J++WV1znJQRt&#x2F;&#x2F;AAzp8o5GiVAnEvDUhz&#x2F;djBOMfOlGmYV6IbN1cFqIroY2x3iRlAOeSwJA+8sX30M9olVUQWO+GnbjY0siooGcllqCuf8AWgP1Gi1Z1p2QxhVIqnCZ&#x2F;hiHwH6mlj++mC&#x2F;XSOloitOglmdpZISwHWISJG3P&#x2F;u6b9NHlSXIP2ST2MU1suPZtSRV8aRU7W8S0bjkI5Aqg4P8AEHAK+egZLRBJab1xVrsxEoBEnNT3VWT+ucemNOHYHe0fs1kaSXiW3zTCnVsYESVE3CPlwwjT9fLHAm5L7baYxrI9L3kI&#x2F;i+ExlSOhGWOohyuQV8sGLtZTFuqCspa3hSCeCaaIsDlUq52I559cfLR5SGeCqE0b44m7rh4o+qh8g&#x2F;hf2DoXno6e4GCsRWpah4omqID+8O8DMy+H&#x2F;1P6HRLR00lT+LTyoeKQkoeWQ3Pl6&#x2F;irrzdMbx8xHWN6pXqlSSWB0cyI6mPKkF8EDuvONvpolqdw1VRD71NgxxLjiRlZc+OAOEnnnTKveyK5YhJ4WklQnoUKygfq+l5hZe+iRf9JxhRnkGLHH3Oo4ZSSpjhTyCspm7+FJIGyrllyCvQ8w7fy1w37UNjjbnbxedoe6NLDQ356dIT&#x2F;wBgJOP&#x2F;AMBAz5HXcYCKFHwoQmN&#x2F;hPRjknmPXB1xt9rSluW2Paz3eHikpnmvKVMU&#x2F;EDIyPGpVkYHkpByB4AAHpr1ewMu6Lyew&#x2F;QQUFHfJIeCaQ47wkHh4G+JSPUHvBgatBbJRU3CbhYuWMyOSerKwzgfNdV39lezS7K7JquseNmrK6WCYlhhmHdK+fT8x+51YGw3FDU1yOXjCs8jLw4JJVCxx54fP0Or&#x2F;oE+yMfaeskl3o9uxoVjnjilkjY+DfCCD6HBGq70JZgyOpSRGKOjdVYdQdWj7a6GeautbBuKGJZYsn+IsGP89QTvPbz0WbxTxluAAVSKPzIP3&#x2F;mv8vlrJ1D&#x2F;ALGDYzpCODOs0qjhE9EZY2V0MZdWHMEY66zSllRVLNGjgZVnPJVB661JGrkSSvGX8vBR6azWaAa1nmpikniMEbhEbiy46jONfbBcYaaqjt05BgqC4JJ9Cpx&#x2F;+w5+Ws1mnYfVFgb3JFJa6qnrG4e4lh72QjwZ8Nj&#x2F;AGpT9NQL27zLJcKmJx+FNSmnU+pXJ&#x2F;WU&#x2F;c+ONZrNMQ7RSf1EHsTxrHZ92ZOJfeYY2yPKNv66s806vGxboPP&#x2F;ALzn+h1ms16f2Kw6H601EXeQpk8EzyjC+AKSj+o+2ny1XSa4TW0hzwyySuc&#x2F;3wR9MSvrNZosSGPFsjeSnoXclpMB8P6tFkfZn0yXSndzBwJwyNCqhSOozTZx9z+us1mpm+AY0djvejs8tyCbgmre7hkALAr8YDeH&#x2F;wCQdHNXeaiq3VXXmOUSRRU5UtjBwOCQZ+zfbWazRI&#x2F;UhnytlrqYW+FgJhTx03Fk4IXvIx18vwiDom2vX+78cDQNHwSjCtJxdO75g+hib7HWazUN0xrH9QugqhCkrFu8CwsmW5HIV&#x2F;v+RtEyOGkThI&#x2F;OCS3UEOx&#x2F;nrNZosQeRDhJCapPhIbC4JPPBydcpNyWGbty9tre9UsCmioL0KVVx8P4bCFFHz7tjrNZq79C0uzoJS0kUdhgttO6wBqMQKGAHxcEaE&#x2F;MM4+i6OLNEsl0erEnGtTFHMichniRgw+yp+us1mrMGzV2h+51e02lqGZJ+8DwA+MnJWB&#x2F;w5OomNKkqFTzUjGMctZrNZeq+4IincNAOz+skpQG&#x2F;YlwDikcjlBMQSYifAHmV+o8NZrNZpAJR&#x2F;&#x2F;Z"
-              alt="avatar">
-          </div>
-          <div id="text-header">
-            <h1>Anthony Lee<br><span>hello, world</span></h1>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="photo-header" class="text-center">
+            <!-- PHOTO (AVATAR) -->
+            <div id="photo">
+              <img
+                src="data:image/jpeg;base64,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&#x2F;LlybMipLs6HNrsWLFvg7bBS9UM62irrbvUVSwU2M09EuSDwk4Jb6eGMHroh9ljde6919od5rqegXb3Z9bqOWlioVj71e&#x2F;Lr8TyEZaUmLic56AAADo79oFJeO0Wiht1ljSiDzCnlrJU&#x2F;EdHISV0XqCnxKM8wOPxI1KOwNnLtjbNDZrTTGKhWm4YnmYhQSuJZiOZLP3qnJPPGemuv0mkx6f6KjktTq8moXzZJBnEEoRVZu7dSzEjLOzOhOR54HP18OQHPz&#x2F;KXbXit29dqbjgRwtbSPSyfDgAwy&#x2F;CPnwy4+QGr09xWHvZaqr4+OLvjTwAAcuIqh9Mhsn5arH&#x2F;AJRfZ6V&#x2F;Y9abso4p7Xcu5OH4hwSq6lifE8Qj&#x2F;TWm+jNOc0jMk0AOSGJiYenhoi2R2h3jZl&#x2F;t1ZTVdQ0dPOsstP3p7uYIwLKR5MBg&#x2F;PQ8SJ4IJD1PCwPjkaTJKMAt+7Kwz6ZI0Gk3yVSOwlp2bad72CG72vhpKuqMBC4Hdv3kEL5YAcjmTqPP00I1lqe21s1NUxd3UQSd269cEHnrd7F+5pb52NbdmqpWE3eKuSw+IRDgA9cimH+tjUu9pWzxdITc6dQayJVZmwMzx48cdWAx+o0tqMCl84ItbIsp6cdVUfLGlDQIUYleEgZ5DXuGPg5qcqfDW6oKilmcYBCE6yGQmbdr06i00uVw3Dnp11mnGxKI7fTqRzCDr8tZqlItZDFVdqiIESryPLhCkDVdO1bs33Xvje8lyWRLZRyR9xHUxO5EaDP5kGGLHOrMhliClm428C3Mn5DWpg9QckiMf3cnXozcXaNGgM2pPVW+x2+hqWFbU01PHC9UysveEALnn0zy0&#x2F;VkypECWByccvH&#x2F;AI569XQLEIo1&#x2F;M5J5emkFzq1pUwVz8JycdMDOm8X1s8Gm17TT36igp54RKr1McgBLckU8JblzJHeEKvi8pJ&#x2F;Lqv&#x2F;ALZV0r9sdj8G3qlDKor4KSCrzkyQ90JWDf2hJEQfkD4asNsGpjWndJHZe94YUKHhcHhY8j4YUSn5up8tVe&#x2F;yhtyIptn0sM4amqJquV0QnhLow4SueeMTMB&#x2F;76aiuSk29pTTh549NYImmdY1UszEKAOpJOANe1Iz00b9im0pt5dpVlo4kDrFOlTIGzjhV16&#x2F;UjTEnSsTSsuP2MdnkO2ez200c1O8dShXvQx&#x2F;K8ioScjp&#x2F;pDo1O1ozloY3UI8gUr0C8Mr&#x2F;AM0Xl&#x2F;Z092+w1MNFIPek4Bxj4YgFx3TDHj&#x2F;bHyVfLRBICBUFyA5ebKDmASKxSPllh9xpGm+TRVJAOu16iiaB1dnCyTU5SYcQZY2lIz5592Uf4m89aZtvrSUsCSUiOYe9i+HkD3XeBT8s0gz&#x2F;AH21Ic1MwjmkkZYxTPPKQ3X8Q1PCPtKv30uq4KOz0dyqECzywRy900gzwySPUfF8&#x2F;wAWPR1ib7BuaQ1ezX2e0jbnuFzqqbvYKRhbI3nxlF4pGJI8coYeZ8GPno6utBTRb1vCVdAkEFup+9gCxgABpC+BjzCL9tN&#x2F;ZvcITtnd00aZimq6qSCRTz4T36R&#x2F;7MSY+miTcFTTXPd+4qJi0dQ9sbgzy5q7LgHxz3mm4QjQtJtysT2Q+5+6mGJI+GkWR2xz4iYCzfUxufvp+jnqY1WKJHnqEpo04WOAWPAoB8OqD76T2GiSSn78tw99bRwgjOG4Q39W+2l9Vdo3qa+SPCx089OOIHkT3kPL7ow0yl6QN8jnb6MmogM5Eid8IShUYUKjNg+fNcaiz2jNsDf3s1b57yIyS09G1xplUZPeQcD4A9TE&#x2F;wB9SvWzNDS1M6HhYRtM3j8XdAn+Y0kofi2feYe4SZR70ixMMq4WSccPyZeWvdplWjiNBGyd5H4RyED5eGkkSf8ATFPPhmb+h1IXbNsR+zDtg3Vtl0KRUdZIlPnlxQ54om+sbJoBU8M9eT4txZH90aXKcpnRP2Qb6sPZPtRvjWWlklm7teRaNGkB5dGVx7ypHgQD11d73UVEXAPzLhlI6EBhkj0OAdc8&#x2F;ZYvb0HZjtt45O&#x2F;aUyU8aOchW77PB6EyKi48pyfHXQS0L7nbrd3bvJGkAQcY+MIAvDn5AD9dEgy0l0QluiCOybsraBT3a8pok&#x2F;8AtvzH25j6abq+UrRTEEkFeenf2hLjT2rc1tl4As0kMp4lHPhEmF&#x2F;r99R&#x2F;TbupbnTSUxcRz9FU&#x2F;vZPh66wsy25GkRRJtvI93ix&#x2F;CBrNaKF+BQR1HhrNAPEStGE+M5ZvFm18XimGU5L&#x2F;Fj+Wt6Ux4y0uDnonFy1smqO4j4sZHhg9fTGhGmNddSIxgHipJODzPLTDepe8JjWP42IQA9SCeePov6D10QVdRJL3blODPRDzOPPQ5cUkkrFLN8SyZTB5gBccv8AEjfpp7G&#x2F;giR5e5im2VUyUrf57Sh62NxzzwGIDP1A+2PHVUvbi3Gl7uG02gl7yjEczRsJRKcusJOT58uYHIatBtUxS++QSfiLUUEkOAeWGCkY+qY+2qte1ht+b&#x2F;kvZJcgC0Vn7NlBGFQd2pQg8sqylW5chjHXOncbTSAZE6K2LKFUZIOeWc6tr7Gu047XZbjuipp+KprJGhpH8VijwWPyZyP9T56qxHtiqm3VBY4Hiq6qaoSnjaE5V2cgDH310g2jtGHa+16OzUDZioqEw9504sI+Tj1JU&#x2F;U6tOXopijbthj+1lpppou5+BJBwjPJgxIb&#x2F;ZkkH016iudVKzcCBAJIy2B5vDn9S33Ol7WmJJaojJBYkZHjmo&#x2F;9tPHuUSiqbuwpEwOceTdP0H21EVYdpMZo4aqogrA&#x2F;P8emjfnnlxQf+o&#x2F;fSu6ztJt26MULB2pRnxVgaYMD9z99EbUi06VsgGBxU6uv+JOePmo0wbxpXt1suk0X5H7p5F8MgwBj&#x2F;sHV3FqIG+Rx7HaISdn1rjkZhJVMhOD1yx6&#x2F;MS&#x2F;rr1uRJo90X67UglaOnp04g+SDmPvMen5c&#x2F;PTv2RSOezXZUrRnJjjViy5DN3tPw&#x2F;oD9tZbLi8MV8mkicxyQsrxsckYhfl6jKn9NMwinEpfI+R16262S1CPxwxWxOR&#x2F;dIWoyPoUA1lLR8dJfuMcCVcsTQMOq8E0wz&#x2F;sr99Nl3EVZeZaYAe73KKKmaMZyhlmqYyQACSR3mcY540VVVn&#x2F;AGlTSRLLJAY3IV0jlzjic&#x2F;8AZ&#x2F;29F4RCTfSHKsk76J48cKGpjpXJGeciRAHPlh8fTXmxU8gtnDgkmrYlR5F1b+Tt99auAvQSJJIY3lraeQGTiGO7eM8P5OfFwYz66e6WiltdylSYKDH8RQSoPiOPMjwA1Largq4vqjnv&#x2F;lHOzlrdujbG&#x2F;wCnQvT3SmSgqmxyEsKAK31jx9U1S+vcRNWtnkQuPtjXX72oOyiTtM9nLcllijSprrbALhb1idWPeQDJGQT1TvR9RrjjuCr4KLjOfjVQc+mdLsE0XK9lCqaptu0qBGWGqqSDTjriTjJWTB8SywDI8EORrpejRxtFFhoY3yscZ8AQxH0wB9tc5PYR29UXfce25o0&#x2F;zSihJkmwSY2aN2GM+HGuc+BZhro0TGXUZwyIpTPMgKSpH2I1eC4LS6SK3e0ktU++KQz&#x2F;APRhQotPz8AzBvrn+moklp8Oro2CDkEHnnU7+1XCsVbtqfkokinQAH+0rfzY6g1Rjp+usnOv7WCZIGx+0VSYqC7SKkpISOpPIN5BvI+us1Hs9IJBxAc&#x2F;LWaWaR6w0nql5KhSWTyHh89eFh7vEjyAy45HGAPlr4khi4guEPXII660zVXCGZiW54A5ZY+Q0sjWNdXwvPAjv+GRzK8ueef6aG7pSzwQxzlGjMMLTMc5HxBWz6c+8H+E6eZaeWoKsRlDnjUdFGNKa96hrcJ0jE8bSLDKpHVVClj8stOPvpyC+KJQNbdqYaC8xRGMJCphick&#x2F;ugZI+3LVU&#x2F;a4FZTbmokWOSO2y08MzFCSjFk+AkeHwk9dWj97hqahsxSLKJJSfDkqsCT6kxD6tqBPa7t7VlgoKmNeGagijjPCefdg8GT8in6nTWJ06A5FaBH2TNkQ7l7R4b4IMwWiDvCi&#x2F;EnvDNwRkeXLibHmNXZhikhpxwxMpNMwyAefwkD+X6aqB7F0tRVXLd1YHaKRaenTMXwAsS&#x2F;PA5Z9dW4otz3K1T4lkFVAzx&#x2F;DIB+VJRyPzGc&#x2F;XVpVu5PY+IhpBIZKupUZI75Y&#x2F;kWYqP8AzRp5jhNVTyAZzMycIx5mLH&#x2F;nDTPar6twp0lki4J++WV1znJQRt&#x2F;&#x2F;AAzp8o5GiVAnEvDUhz&#x2F;djBOMfOlGmYV6IbN1cFqIroY2x3iRlAOeSwJA+8sX30M9olVUQWO+GnbjY0siooGcllqCuf8AWgP1Gi1Z1p2QxhVIqnCZ&#x2F;hiHwH6mlj++mC&#x2F;XSOloitOglmdpZISwHWISJG3P&#x2F;u6b9NHlSXIP2ST2MU1suPZtSRV8aRU7W8S0bjkI5Aqg4P8AEHAK+egZLRBJab1xVrsxEoBEnNT3VWT+ucemNOHYHe0fs1kaSXiW3zTCnVsYESVE3CPlwwjT9fLHAm5L7baYxrI9L3kI&#x2F;i+ExlSOhGWOohyuQV8sGLtZTFuqCspa3hSCeCaaIsDlUq52I559cfLR5SGeCqE0b44m7rh4o+qh8g&#x2F;hf2DoXno6e4GCsRWpah4omqID+8O8DMy+H&#x2F;1P6HRLR00lT+LTyoeKQkoeWQ3Pl6&#x2F;irrzdMbx8xHWN6pXqlSSWB0cyI6mPKkF8EDuvONvpolqdw1VRD71NgxxLjiRlZc+OAOEnnnTKveyK5YhJ4WklQnoUKygfq+l5hZe+iRf9JxhRnkGLHH3Oo4ZSSpjhTyCspm7+FJIGyrllyCvQ8w7fy1w37UNjjbnbxedoe6NLDQ356dIT&#x2F;wBgJOP&#x2F;AMBAz5HXcYCKFHwoQmN&#x2F;hPRjknmPXB1xt9rSluW2Paz3eHikpnmvKVMU&#x2F;EDIyPGpVkYHkpByB4AAHpr1ewMu6Lyew&#x2F;QQUFHfJIeCaQ47wkHh4G+JSPUHvBgatBbJRU3CbhYuWMyOSerKwzgfNdV39lezS7K7JquseNmrK6WCYlhhmHdK+fT8x+51YGw3FDU1yOXjCs8jLw4JJVCxx54fP0Or&#x2F;oE+yMfaeskl3o9uxoVjnjilkjY+DfCCD6HBGq70JZgyOpSRGKOjdVYdQdWj7a6GeautbBuKGJZYsn+IsGP89QTvPbz0WbxTxluAAVSKPzIP3&#x2F;mv8vlrJ1D&#x2F;ALGDYzpCODOs0qjhE9EZY2V0MZdWHMEY66zSllRVLNGjgZVnPJVB661JGrkSSvGX8vBR6azWaAa1nmpikniMEbhEbiy46jONfbBcYaaqjt05BgqC4JJ9Cpx&#x2F;+w5+Ws1mnYfVFgb3JFJa6qnrG4e4lh72QjwZ8Nj&#x2F;AGpT9NQL27zLJcKmJx+FNSmnU+pXJ&#x2F;WU&#x2F;c+ONZrNMQ7RSf1EHsTxrHZ92ZOJfeYY2yPKNv66s806vGxboPP&#x2F;ALzn+h1ms16f2Kw6H601EXeQpk8EzyjC+AKSj+o+2ny1XSa4TW0hzwyySuc&#x2F;3wR9MSvrNZosSGPFsjeSnoXclpMB8P6tFkfZn0yXSndzBwJwyNCqhSOozTZx9z+us1mpm+AY0djvejs8tyCbgmre7hkALAr8YDeH&#x2F;wCQdHNXeaiq3VXXmOUSRRU5UtjBwOCQZ+zfbWazRI&#x2F;UhnytlrqYW+FgJhTx03Fk4IXvIx18vwiDom2vX+78cDQNHwSjCtJxdO75g+hib7HWazUN0xrH9QugqhCkrFu8CwsmW5HIV&#x2F;v+RtEyOGkThI&#x2F;OCS3UEOx&#x2F;nrNZosQeRDhJCapPhIbC4JPPBydcpNyWGbty9tre9UsCmioL0KVVx8P4bCFFHz7tjrNZq79C0uzoJS0kUdhgttO6wBqMQKGAHxcEaE&#x2F;MM4+i6OLNEsl0erEnGtTFHMichniRgw+yp+us1mrMGzV2h+51e02lqGZJ+8DwA+MnJWB&#x2F;w5OomNKkqFTzUjGMctZrNZeq+4IincNAOz+skpQG&#x2F;YlwDikcjlBMQSYifAHmV+o8NZrNZpAJR&#x2F;&#x2F;Z"
+                alt="avatar"
+              />
+            </div>
+            <div id="text-header">
+              <h1>Anthony Lee<br /><span>hello, world</span></h1>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-7">
-        <!-- ABOUT ME -->
-        <div class="box">
-          <h2><i class="fas fa-user ico"></i> About</h2>
-          <p>I am the founder of TIGOD Online Limited.
-
-            With 5 years software working experiences especially in Web Development, I hope to make something different
-            in Hong Kong IT industry.
-
-            Not only provide IT services to the customers, our team wish to develop more IT products in the future.</p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-7">
+          <!-- ABOUT ME -->
+          <div class="box">
+            <h2><i class="fas fa-user ico"></i> About</h2>
+            <p>
+              I am a Full-stack developer. With 6 years software working
+              experiences especially in Web Development, I hope to make
+              something different in Hong Kong IT industry. Not only provide IT
+              services to the customers, our team wish to develop more IT
+              products in the future.
+            </p>
+          </div>
+          <!-- WORK EXPERIENCE -->
+          <div class="box">
+            <h2><i class="fas fa-suitcase ico"></i> Work Experience</h2>
+            <div class="job clearfix">
+              <div class="row">
+                <div class="details">
+                  <div class="where">Pinnacle Enterprise Holdings Ltd</div>
+                  <div class="address">
+                    <a
+                      href="https://www.linkedin.com/company/pinnacle-enterprise-holdings-ltd/"
+                      target="_blank"
+                    >
+                      <i class="fas fa-globe ico"></i>
+                      https://www.linkedin.com/company/pinnacle-enterprise-holdings-ltd/
+                    </a>
+                  </div>
+                  <div class="year">February 2021 –</div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Front-end Developer</div>
+                    <div class="description">
+                      Building a lottery gambling platform product.<br />Tech
+                      Stacks: React, TypeScript, redux, redux-saga.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="details">
+                  <div class="where">SHERGON Print</div>
+                  <div class="address">
+                    <a
+                      href="https://www.linkedin.com/company/shergon-print/"
+                      target="_blank"
+                      ><i class="fas fa-globe ico"></i>
+                      https://www.linkedin.com/company/shergon-print/</a
+                    >
+                  </div>
+                  <div class="year">February 2019 – Apr 2021</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="job-details col-xs-11">
+                  <div class="profession">Full-stack Developer</div>
+                  <div class="description">
+                    Back-end: Ruby on Rails<br />Front-end: React.<br />
+                    <a href="https://qurtty.io/" target="_blank"
+                      >https://qurtty.io/</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job clearfix">
+              <div class="row">
+                <div class="details">
+                  <div class="where">TIGOD Online Limited</div>
+                  <div class="year">June 2015 –</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="job-details col-xs-11">
+                  <div class="profession">Project Manager</div>
+                  <div class="description">
+                    We are Masters in IT Online Solution. Our services include
+                    Web-based and App Development, Search Engine Optimization
+                    (SEO), Tailor-made Systems, IT consultant etc.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job clearfix">
+              <div class="row">
+                <div class="details">
+                  <div class="where">Proactive System</div>
+                  <div class="year">January 2017 – February 2019</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="job-details col-xs-11">
+                  <div class="profession">Software Engineer</div>
+                  <div class="description">
+                    Developing a middle size insurance broker system for a
+                    well-known broker.<br />
+                    Develop a chatbot system for people to integrate their
+                    Facebook page with chatbot easily.<br />
+                    1 year secondment in PCCW.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job clearfix">
+              <div class="row">
+                <div class="details">
+                  <div class="where">Success Finance Limited</div>
+                  <div class="address">
+                    <a
+                      href="https://www.linkedin.com/company/success-finance-limited/"
+                      target="_blank"
+                      ><i class="fas fa-globe ico"></i>
+                      https://www.linkedin.com/company/success-finance-limited/</a
+                    >
+                  </div>
+                  <div class="year">July 2016 – January 2017</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="job-details col-xs-11">
+                  <div class="profession">Programmer</div>
+                  <div class="description">
+                    Developing an analytic system with data visualisation that
+                    helps the sales manager to know the sales performance and
+                    revenue are generated by each sales agent and its
+                    subordinates.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job clearfix">
+              <div class="row">
+                <div class="details">
+                  <div class="where">Bonjour Holdings Limited</div>
+                  <div class="year">April 2014 – June 2014</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="job-details col-xs-11">
+                  <div class="profession">Part-time Programmer</div>
+                  <div class="description">
+                    Helping to fix the front-end of the membership card system.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job clearfix">
+              <div class="row">
+                <div class="details">
+                  <div class="where">ECBuy Trading Limited</div>
+                  <div class="year">July 2013 – September 2013</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="job-details col-xs-11">
+                  <div class="profession">Part-time Programmer</div>
+                  <div class="description">
+                    Developing an E-Commerce system with OpenCart and helping
+                    with payment gateway integration.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- PROJECTS -->
+          <div class="box">
+            <h2><i class="fas fa-code-branch ico"></i> Projects</h2>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <span style="font-weight: bold">Hung Fook Tong BB Card</span
+                ><br />
+                <a
+                  href="http://www.hungfooktong.com/bbcard/orderform.php"
+                  target="_blank"
+                  >http://www.hungfooktong.com/bbcard/orderform.php</a
+                >
+              </li>
+              <li class="list-group-item">
+                <span style="font-weight: bold">全治護脊</span><br />
+                <a href="http://www.hkwholeness.com/" target="_blank"
+                  >http://www.hkwholeness.com/</a
+                >
+              </li>
+              <li class="list-group-item">
+                <span style="font-weight: bold"
+                  >Tai Shing Securities Website</span
+                ><br />
+                <a href="www.taishinghk.com" target="_blank"
+                  >www.taishinghk.com</a
+                >
+              </li>
+              <li class="list-group-item">
+                <span style="font-weight: bold">Soka Kindergarten</span><br />
+                <a href="http://www.soka.edu.hk/" target="_blank"
+                  >http://www.soka.edu.hk/</a
+                >
+              </li>
+              <li class="list-group-item">
+                <span style="font-weight: bold">香港掂檔 十大匠人選舉 2020</span
+                ><br />
+                <a href="https://game.madeinhk.com.hk/" target="_blank"
+                  >https://game.madeinhk.com.hk/</a
+                >
+              </li>
+              <li class="list-group-item">
+                <span style="font-weight: bold"
+                  >鴻福堂 - 自家 Club 會員尊享</span
+                ><br />
+                <a
+                  href="https://www.hungfooktong.com/member/jika_registration_form/"
+                  target="_blank"
+                  >https://www.hungfooktong.com/member/jika_registration_form/</a
+                >
+              </li>
+              <li class="list-group-item">
+                <span style="font-weight: bold">鴻福堂 – 自家喜慶系列</span
+                ><br />
+                <a
+                  href="https://www.hungfooktong.com/joyousseries/"
+                  target="_blank"
+                  >https://www.hungfooktong.com/joyousseries/</a
+                >
+              </li>
+              <li class="list-group-item">
+                <span style="font-weight: bold">鴻福堂【有機滴雞精】</span
+                ><br />
+                <a
+                  href="https://www.hungfooktong.com/chickenessence/"
+                  target="_blank"
+                  >https://www.hungfooktong.com/chickenessence/</a
+                >
+              </li>
+              <li class="list-group-item">
+                <span style="font-weight: bold">鴻福堂【滴虱目魚精】</span
+                ><br />
+                <a
+                  href="https://www.hungfooktong.com/fishessence/"
+                  target="_blank"
+                  >https://www.hungfooktong.com/fishessence/</a
+                >
+              </li>
+              <li class="list-group-item">
+                <span style="font-weight: bold">鴻福堂【黃金蜆精】</span><br />
+                <a
+                  href="https://www.hungfooktong.com/clamessence/"
+                  target="_blank"
+                  >https://www.hungfooktong.com/clamessence/</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- WORK EXPERIENCE -->
-        <div class="box">
-          <h2><i class="fas fa-suitcase ico"></i> Work Experience</h2>
-          <div class="job clearfix">
-            <div class="row">
-              <div class="details">
-                <div class="where">
-                  SHERGON Print
-                </div>
-                <div class="address">
-                  <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;shergon-print&#x2F;" target="_blank"><i
-                      class="fas fa-globe ico"></i>
-                    https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;shergon-print&#x2F;</a>
-                </div>
-                <div class="year">February 2019 –</div>
+        <div class="col-xs-12 col-sm-5">
+          <!-- CONTACT -->
+          <div class="box clearfix">
+            <h2><i class="fas fa-bullseye ico"></i> Contact</h2>
+            <div class="contact-item">
+              <div class="icon pull-left text-center">
+                <span class="fas fa-phone fa-fw"></span>
+              </div>
+              <div class="title only pull-right">51136101</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center">
+                <span class="fas fa-envelope fa-fw"></span>
+              </div>
+              <div class="title only pull-right">
+                <a href="mailto:hososlch@gmail.com" target="_blank"
+                  >hososlch@gmail.com</a
+                >
               </div>
             </div>
-            <div class="row">
-              <div class="job-details col-xs-11">
-                <div class="profession">Full-stack Developer</div>
-                <div class="description">
-                  Back-end: Ruby on Rails<br />Front-end: React.<br />
-                  <a href="https://qurtty.io/" target="_blank">https://qurtty.io/</a>
-                </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center">
+                <span class="fab fa-linkedin fa-fw"></span>
               </div>
-            </div>
-          </div>
-          <div class="job clearfix">
-            <div class="row">
-              <div class="details">
-                <div class="where">
-                  TIGOD Online Limited
-                </div>
-                <div class="year">June 2015 –</div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="job-details col-xs-11">
-                <div class="profession">Project Manager</div>
-                <div class="description">
-                  We are Masters in IT Online Solution. Our services include Web-based and App Development, Search
-                  Engine Optimization (SEO), Tailor-made Systems, IT consultant etc.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="job clearfix">
-            <div class="row">
-              <div class="details">
-                <div class="where">
-                  Proactive System
-                </div>
-                <div class="year">January 2017 – February 2019</div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="job-details col-xs-11">
-                <div class="profession">Software Engineer</div>
-                <div class="description">
-                  Developing a middle size insurance broker system for a well-known broker.<br />
-                  Develop a chatbot system for people to integrate their Facebook page with chatbot easily.<br />
-                  1 year secondment in PCCW.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="job clearfix">
-            <div class="row">
-              <div class="details">
-                <div class="where">
-                  Success Finance Limited
-                </div>
-                <div class="address">
-                  <a href="https://www.linkedin.com/company/success-finance-limited/" target="_blank"><i
-                      class="fas fa-globe ico"></i>
-                    https://www.linkedin.com/company/success-finance-limited/</a>
-                </div>
-                <div class="year">July 2016 – January 2017</div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="job-details col-xs-11">
-                <div class="profession">Programmer</div>
-                <div class="description">
-                  Developing an analytic system with data visualisation that helps the sales manager to know the sales
-                  performance and revenue are generated by each sales agent and its subordinates.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="job clearfix">
-            <div class="row">
-              <div class="details">
-                <div class="where">
-                  Bonjour Holdings Limited
-                </div>
-                <div class="year">April 2014 – June 2014</div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="job-details col-xs-11">
-                <div class="profession">Part-time Programmer</div>
-                <div class="description">
-                  Helping to fix the front-end of the membership card system.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="job clearfix">
-            <div class="row">
-              <div class="details">
-                <div class="where">
-                  ECBuy Trading Limited
-                </div>
-                <div class="year">July 2013 – September 2013</div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="job-details col-xs-11">
-                <div class="profession">Part-time Programmer</div>
-                <div class="description">
-                  Developing an E-Commerce system with OpenCart and helping with payment gateway integration.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- PROJECTS -->
-        <div class="box">
-          <h2><i class="fas fa-code-branch ico"></i> Projects</h2>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <span style="font-weight:bold">Hung Fook Tong BB Card</span><br />
-              <a href="http://www.hungfooktong.com/bbcard/orderform.php"
-                target="_blank">http://www.hungfooktong.com/bbcard/orderform.php</a>
-            </li>
-            <li class="list-group-item">
-              <span style="font-weight:bold">全治護脊</span><br />
-              <a href="http://www.hkwholeness.com/" target="_blank">http://www.hkwholeness.com/</a>
-            </li>
-            <li class="list-group-item">
-              <span style="font-weight:bold">Tai Shing Securities Website</span><br />
-              <a href="www.taishinghk.com" target="_blank">www.taishinghk.com</a>
-            </li>
-            <li class="list-group-item">
-              <span style="font-weight:bold">Soka Kindergarten</span><br />
-              <a href="http://www.soka.edu.hk/" target="_blank">http://www.soka.edu.hk/</a>
-            </li>
-            <li class="list-group-item">
-              <span style="font-weight:bold">香港掂檔 十大匠人選舉 2020</span><br />
-              <a href="https://game.madeinhk.com.hk/" target="_blank">https://game.madeinhk.com.hk/</a>
-            </li>
-            <li class="list-group-item">
-              <span style="font-weight:bold">鴻福堂 - 自家 Club 會員尊享</span><br />
-              <a href="https://www.hungfooktong.com/member/jika_registration_form/"
-                target="_blank">https://www.hungfooktong.com/member/jika_registration_form/</a>
-            </li>
-            <li class="list-group-item">
-              <span style="font-weight:bold">鴻福堂 – 自家喜慶系列</span><br />
-              <a href="https://www.hungfooktong.com/joyousseries/"
-                target="_blank">https://www.hungfooktong.com/joyousseries/</a>
-            </li>
-            <li class="list-group-item">
-              <span style="font-weight:bold">鴻福堂【有機滴雞精】</span><br />
-              <a href="https://www.hungfooktong.com/chickenessence/"
-                target="_blank">https://www.hungfooktong.com/chickenessence/</a>
-            </li>
-            <li class="list-group-item">
-              <span style="font-weight:bold">鴻福堂【滴虱目魚精】</span><br />
-              <a href="https://www.hungfooktong.com/chickenessence/"
-                target="_blank">https://www.hungfooktong.com/fishessence/</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-5">
-        <!-- CONTACT -->
-        <div class="box clearfix">
-          <h2><i class="fas fa-bullseye ico"></i> Contact</h2>
-          <div class="contact-item">
-            <div class="icon pull-left text-center"><span class="fas fa-phone fa-fw"></span></div>
-            <div class="title only pull-right">51136101</div>
-          </div>
-          <div class="contact-item">
-            <div class="icon pull-left text-center"><span class="fas fa-envelope fa-fw"></span></div>
-            <div class="title only pull-right"><a href="mailto:hososlch@gmail.com"
-                target="_blank">hososlch@gmail.com</a></div>
-          </div>
-          <div class="contact-item">
-            <div class="icon pull-left text-center"><span class="fab fa-linkedin fa-fw"></span></div>
-            <div class="title pull-right">LinkedIn</div>
-            <div class="description pull-right"><a
-                href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;anthony-lee-77851376&#x2F;"
-                target="_blank">anthony-lee-77851376</a></div>
-          </div>
-        </div>
-        <!-- EDUCATION -->
-        <div class="box">
-          <h2><i class="fas fa-university ico"></i> Education</h2>
-          <ul id="education" class="clearfix">
-            <li>
-              <div class="year pull-left">2012 2016</div>
+              <div class="title pull-right">LinkedIn</div>
               <div class="description pull-right">
-                <h3>The Hong Kong Polytechnic University</h3>
-                <div class="where"></div>
-                <p><i class="fas fa-graduation-cap ico"></i> Bachelor of Computing</p>
-                <p>Computer Science</p>
+                <a
+                  href="https://www.linkedin.com/in/anthony-lee-77851376/"
+                  target="_blank"
+                  >anthony-lee-77851376</a
+                >
               </div>
-            </li>
-          </ul>
-        </div>
-        <!-- SKILLS -->
-        <div class="box">
-          <h2><i class="fas fa-tasks ico"></i> Skills</h2>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Amazon DynamoDB
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
             </div>
           </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Amazon Web Services (AWS)
+          <!-- EDUCATION -->
+          <div class="box">
+            <h2><i class="fas fa-university ico"></i> Education</h2>
+            <ul id="education" class="clearfix">
+              <li>
+                <div class="year pull-left">2012 2016</div>
+                <div class="description pull-right">
+                  <h3>The Hong Kong Polytechnic University</h3>
+                  <div class="where"></div>
+                  <p>
+                    <i class="fas fa-graduation-cap ico"></i> Bachelor of
+                    Computing
+                  </p>
+                  <p>Computer Science</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- SKILLS -->
+          <div class="box">
+            <h2><i class="fas fa-tasks ico"></i> Skills</h2>
+            <div class="skills clearfix">
+              <div class="item-skills">Amazon Web Services (AWS)</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
             </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
+            <div class="skills clearfix">
+              <div class="item-skills">ASP.NET</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">C#</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Cascading Style Sheets (CSS)</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">CSS</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Data Analysis</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Data Mining</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Database Design</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Docker</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">E-commerce</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Grails</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Graphic Design</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">HTML</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">HTML5</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Java</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">JavaScript</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">jQuery</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">JSON</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Mobile Applications</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">MongoDB</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">MySQL</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Node.js</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Object Oriented Design</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">PHP</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">PostgreSQL</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Python</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">React Hooks</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">React.js</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Recoil.js</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Redis</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Redux</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">redux-saga</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Ruby</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Ruby on Rails</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">UmiJS</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Web Design</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Web Development</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">Zustand</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
             </div>
           </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              ASP.NET
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              AWS Lambda
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              C#
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Cascading Style Sheets (CSS)
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Chatbot
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Cloud Applications
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              CSS
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Data Analysis
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Data Mining
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Database Design
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              docker
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              E-commerce
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Ethical Hacking
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Grails
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Graphic Design
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              HTML
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              HTML5
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              IT Infrastructure Management
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Java
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              JavaScript
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              jQuery
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              JSON
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Keras
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Mobile Applications
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              MongoDB
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              MySQL
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Node.js
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Object Oriented Design
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              PHP
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              PostgreSQL
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Python
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              React Hooks
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              React.js
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Recoil.js
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Redis
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Redux
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              redux-saga
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Ruby
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Ruby on Rails
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              SEO
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Software Project Management
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              UmiJS
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Web Design
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="skills clearfix">
-            <div class="item-skills">
-              Web Development
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-        </div>
-        <!-- HOBBIES -->
-        <div class="box">
-          <h2><i class="fas fa-heart ico"></i> Interests</h2>
-          <div class="interests clearfix">
-            <div class="item-interests">
-              Programming
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
-            </div>
-          </div>
-          <div class="interests clearfix">
-            <div class="item-interests">
-              Fundamental Stock Analysis
-            </div>
-            <div class="col-sm-offset-1 col-sm-12 clearfix">
+          <!-- HOBBIES -->
+          <div class="box">
+            <h2><i class="fas fa-heart ico"></i> Interests</h2>
+            <div class="interests clearfix">
+              <div class="item-interests">Programming</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
+            </div>
+            <div class="interests clearfix">
+              <div class="item-interests">Fundamental Stock Analysis</div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-</body>
-
+  </body>
 </html>
