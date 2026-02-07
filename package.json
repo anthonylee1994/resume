@@ -1,0 +1,17 @@
+{
+  "homepage": "https://resume.on99.app",
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.24.0",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
