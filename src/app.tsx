@@ -13,7 +13,7 @@ export const App = React.memo(() => {
         <React.Fragment>
             <div className="mx-[15px] mt-[120px] mb-[15px] max-w-[1170px] bg-white px-[15px] sm:mx-auto">
                 <Header />
-                <div className="-mx-[15px] flex flex-wrap">
+                <div className="mx-[-15px] flex flex-wrap">
                     <div className="min-h-px w-full px-[15px] sm:w-7/12 print:w-3/5">
                         <About />
                         <WorkExperience />

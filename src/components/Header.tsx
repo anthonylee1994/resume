@@ -3,7 +3,7 @@ import AvatarImage from "../assets/avatar.jpg";
 
 export const Header = React.memo(() => {
     return (
-        <div className="-mx-[15px] flex flex-wrap">
+        <div className="mx-[-15px] flex flex-wrap">
             <div className="min-h-px w-full px-[15px]">
                 <div className="mt-[-75px] text-center">
                     <div className="inline-block size-[160px] overflow-hidden rounded-full bg-white p-[5px] print:hidden">
