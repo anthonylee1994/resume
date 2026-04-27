@@ -24,7 +24,7 @@ export type WorkRole = {
 };
 
 export const aboutText =
-    "I am a Full-stack developer. With 7 years software working experiences especially in Web Development, I hope to make something different in Hong Kong IT industry. Not only provide IT services to the customers, our team wish to develop more IT products in the future.";
+    "I am a full-stack developer with over 10 years of experience in software development, specializing in web applications. I focus on building practical, maintainable products and enjoy working with teams that want to create lasting value for Hong Kong's IT industry.";
 
 export const contactItems: readonly ContactItem[] = [
     {
