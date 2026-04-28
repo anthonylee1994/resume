@@ -1,5 +1,4 @@
 import React from "react";
-
 import {contactItems, type ContactItem} from "../data/resumeData";
 import {SectionTitle} from "./SectionTitle";
 

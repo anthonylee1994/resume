@@ -1,7 +1,6 @@
 import React from "react";
-
-import {projects, type Project} from "../data/resumeData";
 import {SectionTitle} from "./SectionTitle";
+import {projects, type Project} from "../data/resumeData";
 
 function renderProject(project: Project) {
     return (

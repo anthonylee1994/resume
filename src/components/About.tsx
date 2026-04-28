@@ -1,5 +1,4 @@
 import React from "react";
-
 import {aboutText} from "../data/resumeData";
 import {SectionTitle} from "./SectionTitle";
 

@@ -1,5 +1,4 @@
 import React from "react";
-
 import {type WorkExperience as WorkExperienceItem, type WorkRole, workExperiences} from "../data/resumeData";
 import {SectionTitle} from "./SectionTitle";
 

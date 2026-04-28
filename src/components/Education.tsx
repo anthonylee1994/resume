@@ -1,5 +1,4 @@
 import React from "react";
-
 import {SectionTitle} from "./SectionTitle";
 
 export const Education = React.memo(() => {
